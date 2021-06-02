@@ -11,6 +11,7 @@ import { JobSectionComponent } from './components/job-section/job-section.compon
 import { JobEntryComponent } from './components/job-entry/job-entry.component';
 import { JobHookDirective } from './directives/job-hook.directive';
 import { FormsModule } from '@angular/forms';
+import { MasterFormService } from './services/master-form.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MasterFormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

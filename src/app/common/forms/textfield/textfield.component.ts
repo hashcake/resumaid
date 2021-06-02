@@ -9,10 +9,16 @@ import { FormItem } from '../formitem';
 })
 export class TextfieldComponent implements FormItem, OnInit {
 
+  private innerValue!: string
+
   constructor(private formService: MasterFormService) {
   }
-  public get controlValue(): any {
-    return 'test';
+  public get controlValue(): string {
+    return this.innerValue;
+  }
+
+  public set controlValue(val: string) {
+    this.innerValue = val
   }
 
   @Input()
@@ -21,7 +27,7 @@ export class TextfieldComponent implements FormItem, OnInit {
   name!: string;
 
   ngOnInit(): void {
-    this.formService.registerFormControl(this)
+    this.formService.registerFormControl(this);
   }
 
 }
