@@ -1,0 +1,31 @@
+<form>
+  <div class="row">
+    <!-- left col -->
+    <div class="col-4">
+      <div class="mb-3">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control form-control-sm" id="inputName">
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control form-control-sm" id="inputEmail">
+      </div>
+      <div class="mb-3">
+        <label for="inputAddress" class="form-label">Residence address</label>
+        <input type="text" class="form-control form-control-sm" id="inputAddress">
+      </div>
+      <div class="mb-3">
+        <label for="inputTel" class="form-label">Telephone</label>
+        <input type="text" class="form-control form-control-sm" id="inputTel">
+      </div>
+      <textfield [name]="'anri'" [label]="'okita'" ></textfield>
+    </div>
+    <!-- right col -->
+    <div class="col-8">
+      <job-section></job-section>
+    </div>
+  </div>
+  <div class="row">
+    <a [routerLink]="['/resume']" class="btn btn-success">Submit</a>
+  </div>
+</form>
