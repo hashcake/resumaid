@@ -12,6 +12,7 @@ import { JobEntryComponent } from './components/job-entry/job-entry.component';
 import { JobHookDirective } from './directives/job-hook.directive';
 import { FormsModule } from '@angular/forms';
 import { MasterFormService } from './services/master-form.service';
+import { TextareaComponent } from './common/forms/textarea/textarea.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MasterFormService } from './services/master-form.service';
     TextfieldComponent,
     JobSectionComponent,
     JobEntryComponent,
-    JobHookDirective
+    JobHookDirective,
+    TextareaComponent
   ],
   imports: [
     BrowserModule,
