@@ -10,7 +10,7 @@ import { TextfieldComponent } from './common/forms/textfield/textfield.component
 import { JobSectionComponent } from './components/job-section/job-section.component';
 import { JobEntryComponent } from './components/job-entry/job-entry.component';
 import { JobHookDirective } from './directives/job-hook.directive';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MasterFormService } from './services/master-form.service';
 import { TextareaComponent } from './common/forms/textarea/textarea.component';
 
@@ -29,7 +29,8 @@ import { TextareaComponent } from './common/forms/textarea/textarea.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [MasterFormService],
   bootstrap: [AppComponent]

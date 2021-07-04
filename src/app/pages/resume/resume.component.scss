@@ -1,0 +1,86 @@
+@page {
+    size: A4;
+    margin: 0;
+    }
+    @media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    .pagebreak { page-break-before: always; clear: both;}
+    }
+    
+    .display-1 {
+        font-size: 3rem;
+    }
+
+    .display-6 {
+        font-size: 1.25rem;
+    }
+
+    .sidebar {
+        background-color: #0197F6;
+        color: white;
+        font-size: 0.65rem;
+        padding-left: 1mm;
+        padding-right: 1mm;
+    }
+
+    .main-content {
+        border-left: 5px solid #1ED4CB;
+    }
+
+    .first-element {
+        margin-top: 50px;
+    }
+
+    .photo-col img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .deets {
+        padding-left: 1em;
+    }
+
+    .deets .badge {
+        background-color: #06A77D;
+        color: white;
+    }
+
+    .details {
+        margin: 2rem 0;
+    }
+
+    .section .row {
+        padding-top: 2rem;
+    }
+
+    .main-content > .row {
+        margin-bottom: 2rem;
+    }
+
+    .about-me {
+        margin-top: 2rem;
+    }
+
+    .about-me .section-title,
+    .jobs .section-title {
+        border-bottom: 1px solid #CCC;
+    }
+
+    .lead {
+        font-size: 1rem !important;
+    }
+
+    h6.caption {
+        font-style: italic;
+    }
+
+    .experience .year {
+        font-size: .75rem;
+    }
+
+    .experience .job-descr {
+        border-left: 1px solid #DDD;
+    }

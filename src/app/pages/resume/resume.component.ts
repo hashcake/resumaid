@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MasterFormService } from 'src/app/services/master-form.service';
 
 @Component({
   selector: 'app-resume',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  private formData: any;
+
+  constructor(private formService: MasterFormService) { }
 
   ngOnInit(): void {
+    this.formData = this.formService.getFormData();
   }
 
 }

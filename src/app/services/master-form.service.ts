@@ -5,7 +5,7 @@ import { FormItem } from '../common/forms/formitem';
 @Injectable()
 export class MasterFormService {
 
-  private form!: FormGroup
+  public form!: FormGroup
 
   constructor() {
     this.form = new FormGroup({});
@@ -14,5 +14,11 @@ export class MasterFormService {
   registerFormControl(formItem: FormItem): void {
     let control: FormControl = new FormControl(formItem.controlValue);
     this.form.addControl(formItem.name, control);
+  }
+
+  getFormData() {
+    const controls = this.form.controls;
+    console.log(controls)
+    return controls;
   }
 }

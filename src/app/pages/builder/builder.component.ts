@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MasterFormService } from 'src/app/services/master-form.service';
 
 @Component({
   selector: 'app-builder',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuilderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fs: MasterFormService) { }
 
   ngOnInit() {
+  }
+
+  get formService() {
+    return this.fs;
   }
 
 }
